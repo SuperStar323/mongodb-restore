@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "name": "mongodb-restore-v2",
+  "description": "restore data from mongodb-backup",
+  "keywords": [
+    "mongodb",
+    "restore",
+    "dump"
+  ],
+  "preferGlobal": false,
+  "homepage": "https://github.com/topcoder1208/mongodb-restore",
+  "author": {
+    "name": "Jin",
+    "email": "jbangbang1122@gmail.com",
+    "url": "https://github.com/topcoder1208"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/topcoder1208/mongodb-restore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/topcoder1208/mongodb-restore/issues",
+    "email": "jbangbang1122@gmail.com"
+  },
+  "main": "index.min.js",
+  "dependencies": {
+    "bson": "1.0.1",
+    "graceful-fs": "4.1.11",
+    "logger-request": "3.7.3",
+    "mongodb": "4.2.2",
+    "tar": "2.2.1"
+  },
+  "devDependencies": {
+    "grunt": "~1.0",
+    "grunt-contrib-uglify": "~2.0",
+    "grunt-contrib-jshint": "~1.1",
+    "grunt-endline": "~0.6",
+    "grunt-safer-regex": "~0.0",
+    "istanbul": "~0.4",
+    "mocha": "~3.2",
+    "mongodb-backup-v2": "~1.0.4"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "prepublish": "npm prune",
+    "test": "mocha --bail --check-leaks --globals Promise --timeout 15000",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --timeout 15000"
+  },
+  "license": "Apache-2.0"
+}
