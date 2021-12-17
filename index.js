@@ -270,6 +270,10 @@ function allCollections(db, name, metadata, parser, next) {
       var err = new Error(collectionPath + ' is not a directory');
       return last === ++counter ? next(err) : error(err);
     }
+    const collection = db.collection(collectionName);
+    if (collection) {
+      void collection.drop();
+    }
     db.createCollection(collectionName, function (err, collection) {
 
       if (err) {
