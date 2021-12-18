@@ -1,4 +1,4 @@
-# [mongodb-restore](https://github.com/hex7c0/mongodb-restore)
+# [mongodb-restore](https://github.com/topcoder1208/mongodb-restore)
 
 [![NPM version](https://img.shields.io/npm/v/mongodb-restore.svg)](https://www.npmjs.com/package/mongodb-restore)
 [![Linux Status](https://img.shields.io/travis/hex7c0/mongodb-restore.svg?label=linux-osx)](https://travis-ci.org/hex7c0/mongodb-restore)
@@ -6,9 +6,9 @@
 [![Dependency Status](https://img.shields.io/david/hex7c0/mongodb-restore.svg)](https://david-dm.org/hex7c0/mongodb-restore)
 [![Coveralls](https://img.shields.io/coveralls/hex7c0/mongodb-restore.svg)](https://coveralls.io/r/hex7c0/mongodb-restore)
 
-Restore data from [`mongodb-backup`](https://github.com/hex7c0/mongodb-backup)
+Restore data from [`mongodb-backup`](https://github.com/topcoder1208/mongodb-backup)
 
-Look at [`mongodb-restore-cli`](https://github.com/hex7c0/mongodb-restore-cli) for command line usage, similar to [mongorestore](http://docs.mongodb.org/manual/reference/program/mongorestore/)
+Look at [`mongodb-restore-cli`](https://github.com/topcoder1208/mongodb-restore-cli) for command line usage, similar to [mongorestore](http://docs.mongodb.org/manual/reference/program/mongorestore/)
 
 ## Installation
 
@@ -19,7 +19,7 @@ npm install mongodb-restore
 ```
 or
 ```bash
-git clone git://github.com/hex7c0/mongodb-restore.git
+git clone git://github.com/topcoder1208/mongodb-restore.git
 ```
 
 Bson@0.4.11 has been pulled out, so versions >= `1.3.0` and <= `1.4.1` are deprecate
